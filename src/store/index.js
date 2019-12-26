@@ -1,9 +1,9 @@
 // import admin from './admin'
-import pod from './pod'
-import deploy from './deploy'
+import uesr from './user'
+import article from './article'
 
 export default {
-    pod,
-    deploy
+    uesr,
+    article
     // admin
 }

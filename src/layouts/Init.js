@@ -8,7 +8,7 @@ class Init extends React.Component {
         // if(this.props.admin.getStatus()) {
             // history.push('/dashboard/pods')
         // }else{
-            history.push('/dashboard/pods')
+            history.push('/dashboard/info')
         // }
     }
 

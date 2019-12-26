@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Layout, message, Row, Col, Menu } from 'antd';
+import { Layout, Menu } from 'antd';
 import styles from './HeaderView.module.less'
+import history from '../routers/history'
 
 const { Header } = Layout;
 
@@ -12,7 +13,7 @@ export default class HeaderView extends React.Component {
   };
 
   handleClick = e => {
-    console.log('click ', e);
+    history.push("/dashboard/"+e.key)
     this.setState({
       current: e.key,
     });
@@ -25,17 +26,16 @@ export default class HeaderView extends React.Component {
         <div className="container">
           <div className="logo" />
           <Menu
-
-          onClick={this.handleClick}
-          selectedKeys={[this.state.current]}
-          theme="light"
-          mode="horizontal"
-          style={{ lineHeight: '64px' }}
+            onClick={this.handleClick}
+            selectedKeys={[this.state.current]}
+            theme="light"
+            mode="horizontal"
+            style={{ lineHeight: '64px' }}
           >
-          <Menu.Item key="info">info</Menu.Item>
-          <Menu.Item key="helm">helm</Menu.Item>
-          <Menu.Item key="deployment">deployment</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+          <Menu.Item key="info">信息</Menu.Item>
+          <Menu.Item key="articles">文章</Menu.Item>
+          <Menu.Item key="numbers">数据</Menu.Item>
+          <Menu.Item key="info">管理</Menu.Item>
           </Menu>
         </div>
       </Header>

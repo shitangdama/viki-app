@@ -2,22 +2,26 @@ import Init from '../layouts/Init'
 
 import BasicLayout from '../layouts/BasicLayout'
 
-// import Login from '../layouts/Login'
+import Login from '../layouts/Login'
 
 import IndexLayout from '../layouts/IndexLayout'
 
 
 import Info from '../pages/info'
-import PodList from '../pages/pod/list'
 
-import DeployList from '../pages/deployment/list'
-import DeployEdit from '../pages/deployment/edit'
+import ArticleList from '../pages/article/list'
+// import DeployEdit from '../pages/article/edit'
 
 const routes = [
     {
         path: "/",
         exact: true,
         component: Init,
+    },
+    {
+        path: "/login",
+        exact: true,
+        component: Login,
     },
     {
         path: "/dashboard",
@@ -29,30 +33,35 @@ const routes = [
                 component: Info,
             },
             {
-                path: "/dashboard/pods",
+                path: "/dashboard/articles",
                 component: IndexLayout,
                 routes: [
                     {
-                        path: "/dashboard/pods",
+                        path: "/dashboard/articles",
                         exact: true,
-                        component: PodList,
+                        component: ArticleList,
                     },
+                    // {
+                    //     path: "/dashboard/articles/:id",
+                    //     exact: true,
+                    //     component: DeployEdit,
+                    // },
                 ]
             },
             {
-                path: "/dashboard/deploys",
+                path: "/dashboard/users",
                 component: IndexLayout,
                 routes: [
-                    {
-                        path: "/dashboard/deploys",
-                        exact: true,
-                        component: DeployList,
-                    },
-                    {
-                        path: "/dashboard/deploys/:name/edit",
-                        exact: true,
-                        component: DeployEdit,
-                    },
+                    // {
+                    //     path: "/dashboard/users",
+                    //     exact: true,
+                    //     component: ArticleList,
+                    // },
+                    // {
+                    //     path: "/dashboard/articles/:id",
+                    //     exact: true,
+                    //     component: DeployEdit,
+                    // },
                 ]
             }
         ]
