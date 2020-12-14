@@ -10,7 +10,7 @@
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^0.8.0",
     "js-yaml": "^3.13.1",
-    "less": "^3.10.3",
+    "less": "^3.13.0",
     "less-loader": "^5.0.0",
     "lodash": "^4.17.15",
     "mobx": "^5.15.0",
