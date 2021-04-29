@@ -1,0 +1,53 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "21:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: antd
+    versions:
+    - 4.11.2
+    - 4.12.0
+    - 4.12.1
+    - 4.12.2
+    - 4.12.3
+    - 4.13.0
+    - 4.13.1
+    - 4.14.0
+    - 4.14.1
+    - 4.15.0
+    - 4.15.1
+    - 4.15.2
+  - dependency-name: "@babel/plugin-proposal-class-properties"
+    versions:
+    - 7.12.1
+    - 7.12.13
+  - dependency-name: react-scripts
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: react-ace
+    versions:
+    - 9.2.1
+    - 9.3.0
+  - dependency-name: mobx
+    versions:
+    - 5.15.7
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: mobx-react
+    versions:
+    - 6.2.5
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: react-dom
+    versions:
+    - 16.13.1
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
