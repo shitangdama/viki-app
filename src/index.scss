@@ -1,12 +1,19 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 
-html,
-body,
-div {
+html, body, div#root, div#root>div {
+    overflow: hidden;
+    width: 100%;
     height: 100%;
-    padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+}
+
+div#root, div#root>div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    @extend .mt-auto;
 }
