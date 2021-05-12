@@ -24,9 +24,9 @@ https://www.graphql-code-generator.com/docs/getting-started/index
 https://json-schema.org/
 
 
-https://github.com/knex/knex/blob/master/lib/query/querybuilder.js
-先去看看不同库的querybuilder
-http://www.ayqy.net/blog/raw-sql-vs-query-builder-vs-orm/
+https://github.com/Kocisov/aarti/tree/main/src/classes
+
+https://github.com/joshnuss/supabase-active-record
 
 https://github.com/typeofweb/functional-orm
 https://github.com/matthewwolfe/active-record-js/blob/master/src/connection/Database.ts
