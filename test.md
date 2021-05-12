@@ -17,7 +17,6 @@ https://github.com/maticzav/graphql-shield
  
 https://zhuanlan.zhihu.com/p/212048394
 
-
 https://github.com/valentinpalkovic/prisma-json-schema-generator/blob/master/src/index.ts
 https://www.graphql-code-generator.com/docs/getting-started/index
 
@@ -30,3 +29,6 @@ https://github.com/joshnuss/supabase-active-record
 
 https://github.com/typeofweb/functional-orm
 https://github.com/matthewwolfe/active-record-js/blob/master/src/connection/Database.ts
+https://github.com/rotcare/active-record/blob/main/src/ActiveRecord.ts
+
+https://github.com/ShabuShabu/Belay
