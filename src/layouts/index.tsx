@@ -1,5 +1,7 @@
 import { useSearchParams, useParams, useLocation } from "react-router-dom";
 import { Outlet, useNavigate } from "react-router-dom";
+import { Header } from "./header";
+import { UserNav } from "./userNav";
 import styles from './index.module.css';
 
 // import ThemeProvider from 'react-bootstrap/ThemeProvider'
@@ -11,28 +13,18 @@ import styles from './index.module.css';
 function GlobalHeader() {
     const navigate = useNavigate();
 
-    return <div className={styles.header}>
-                <nav >
-                {/* <Container>
-                    <Navbar.Brand href="#home">Saki-Dashboard</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link onClick={() => navigate('/home')}>Home</Nav.Link>
-                        <Nav.Link onClick={() => navigate('/about')}>About</Nav.Link>
-                        <Nav.Link onClick={() => navigate('/detail')}>About</Nav.Link>
-                    </Nav>
-                    </Navbar.Collapse>
-                </Container> */}
-                aaaa
-                </nav>
-            </div>
+    return <div className="flex h-16 items-center px-4">
+        <Header />
+        <div className="ml-auto flex items-center space-x-4">
+            <UserNav />
+        </div>
+    </div>
 }
 
 
 
 function GlobalContent() {
-    return <div className={styles.main}>
+    return <div className="md:mx-auto xl:max-w-[1280px]">
         <div className={styles.mainContainer} >
             {/* outlet */}
             <Outlet />
@@ -50,8 +42,8 @@ function GlobalContent() {
 
 export default function Index(){
     return <>
-                <GlobalHeader />
-                <GlobalContent />
-                {/* <GlobalFooter /> */}
-            </>
+        <GlobalHeader />
+        <GlobalContent />
+        {/* <GlobalFooter /> */}
+    </>
 }
